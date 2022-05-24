@@ -6,6 +6,7 @@
 //#region Gamepad buttons config
 
 //TODO Customization
+//Horseface default config?
 var Config = [
   ["G"],
   ["K"],
@@ -28,6 +29,13 @@ var Config = [
   [],
   [],
 ];
+
+//Parse url parameters
+let urlParam = new URLSearchParams(window.location.search);
+if(urlParam.get("config") != null){
+  Config = JSON.parse(urlParam.get("config"));
+  console.log("Config was update based on URL Parameters");
+}
 
 //#endregion
 

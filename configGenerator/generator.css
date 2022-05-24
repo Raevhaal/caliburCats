@@ -1,0 +1,12 @@
+/* Darkmode scrollbar */
+:root {
+    color-scheme: dark;
+}
+
+.select2{
+    min-width: 250px;
+}
+
+.select2-results{
+    color: white;
+}
