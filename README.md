@@ -1,4 +1,4 @@
-# caliburCats
+# CaliburCats
 Input overlay for streams and such with calibur buttons GABK 8426
 
 1. Goto https://caliburcats.horseface.no/configGenerator/
