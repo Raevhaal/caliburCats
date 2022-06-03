@@ -35,6 +35,8 @@ function process(){
   $("#url").val(
     "https://caliburcats.horseface.no?config="
     + JSON.stringify(_tmp)
+    + "&skin="
+    + $("#SkinSelector").val()
   );
 
   //console.log(vButtons);

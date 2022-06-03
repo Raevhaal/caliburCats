@@ -32,9 +32,61 @@ var Config = [
 
 //Parse url parameters
 let urlParam = new URLSearchParams(window.location.search);
+
+//Button layout
 if(urlParam.get("config") != null){
-  Config = JSON.parse(urlParam.get("config"));
-  console.log("Config was update based on URL Parameters");
+  _testConfig = JSON.parse(urlParam.get("config"));
+
+  //Check that all values are strings
+  _validConfig = true;
+  for (let i = 0; i < _testConfig.length; i++) {
+    for (let i2 = 0; i2 < _testConfig[i].length; i2++) {
+      if(typeof(_testConfig[i][i2]) != "string"){
+        _validConfig = false;
+        break;
+      }
+    }
+  }
+
+  // 
+  if(_validConfig){
+    Config = _testConfig;
+    console.log("Config was update based on URL Parameters");
+  }
+}
+//#endregion
+
+//#region SKin handling
+
+
+function updateSkin(skin){
+  //Skin is a string folder 
+  $("#base").attr("src", `skins/${skin}/base.png`)
+  $("#baseLL").attr("src", `skins/${skin}/left/baseLL.png`);
+  $("#baseLR").attr("src", `skins/${skin}/left/baseLR.png`);
+  $("#baseRR").attr("src", `skins/${skin}/right/baseRL.png`);
+  $("#baseRL").attr("src", `skins/${skin}/right/baseRR.png`);
+  
+  $("#base8").attr("src", `skins/${skin}/left/baseL0001.png`);
+  $("#base6").attr("src", `skins/${skin}/left/baseL0010.png`);
+  $("#base4").attr("src", `skins/${skin}/left/baseL1000.png`);
+  $("#base2").attr("src", `skins/${skin}/left/baseL0100.png`);
+  $("#baseK").attr("src", `skins/${skin}/right/baseR0001.png`);
+  $("#baseB").attr("src", `skins/${skin}/right/baseR0010.png`);
+  $("#baseG").attr("src", `skins/${skin}/right/baseR1000.png`);
+  $("#baseA").attr("src", `skins/${skin}/right/baseR0100.png`);
+
+
+  $("#base68").attr("src", `skins/${skin}/left/baseL0011.png`);
+  $("#baseBK").attr("src", `skins/${skin}/right/baseR0011.png`);
+  $("#baseGA").attr("src", `skins/${skin}/right/baseR1100.png`);
+  $("#base42").attr("src", `skins/${skin}/left/baseL1100.png`);
+
+  console.log(`Skin was updated to ${skin}`)
+}
+
+if(urlParam.get("skin") != null && urlParam.get("skin") != "Default"){
+  updateSkin(urlParam.get("skin"));
 }
 
 //#endregion
