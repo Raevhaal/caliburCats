@@ -7,3 +7,6 @@ Input overlay for streams and such with calibur buttons GABK 8426
 4. In obs or whatever create a Browser source with a resolution of 1189 Width x 669 Height 
 5. Use the url from the config generator.
 6. Profit
+
+This project is a re write of Mania cats by malad1211
+https://github.com/malad1211/Mania-Cat
