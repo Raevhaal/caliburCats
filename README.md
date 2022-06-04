@@ -11,3 +11,6 @@ https://github.com/malad1211/Mania-Cat
 5. Use the url from the config generator.
 6. Profit
 
+
+## Modding Guide ##
+https://docs.google.com/document/d/1_IK-SS-OIqO8iPPajMAu0evBy00LmnLA1TSvbQ-ge1U/edit?usp=sharing
