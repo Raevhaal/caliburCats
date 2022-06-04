@@ -64,8 +64,8 @@ function updateSkin(skin){
   $("#base").attr("src", `skins/${skin}/base.png`)
   $("#baseLL").attr("src", `skins/${skin}/left/baseLL.png`);
   $("#baseLR").attr("src", `skins/${skin}/left/baseLR.png`);
-  $("#baseRR").attr("src", `skins/${skin}/right/baseRL.png`);
   $("#baseRL").attr("src", `skins/${skin}/right/baseRR.png`);
+  $("#baseRR").attr("src", `skins/${skin}/right/baseRL.png`);
   
   $("#base8").attr("src", `skins/${skin}/left/baseL0001.png`);
   $("#base6").attr("src", `skins/${skin}/left/baseL0010.png`);
@@ -180,7 +180,7 @@ function renderItems(buttons){
   } else {
     if(buttons["A"]){ _ids.push("#baseA"); }
     else if(buttons["G"]){ _ids.push("#baseG"); }
-    else { _ids.push("#baseRL"); }
+    else { _ids.push("#baseRR"); }
   }
 
   // B+K
@@ -189,7 +189,7 @@ function renderItems(buttons){
   } else {
     if(buttons["B"]){ _ids.push("#baseB"); }
     else if(buttons["K"]){ _ids.push("#baseK"); }
-    else { _ids.push("#baseRR"); }
+    else { _ids.push("#baseRL"); }
   }
   
   // ?apply
