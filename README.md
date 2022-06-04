@@ -12,5 +12,5 @@ https://github.com/malad1211/Mania-Cat
 6. Profit
 
 
-## Modding Guide ##
-https://docs.google.com/document/d/1_IK-SS-OIqO8iPPajMAu0evBy00LmnLA1TSvbQ-ge1U/edit?usp=sharing
+## Skin creation guide ##
+https://docs.google.com/document/d/1_IK-SS-OIqO8iPPajMAu0evBy00LmnLA1TSvbQ-ge1U
